@@ -1,0 +1,76 @@
+<!--
+  Generated template for the AddDrugPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>AddDrugs v2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <!--
+  <div class="autocomplete">
+  <ion-item> 
+      <ion-label color="primary" stacked>Enter drug name</ion-label>
+      <ion-input [(ngModel)]="queryText" placeholder="Enter or Say Drug Name"></ion-input>
+      
+      <button ion-button clear color="dark" type="button" item-right> 
+      <ion-icon name="mic" (click) = "listenDrug()"> </ion-icon> </button> 
+
+      <ion-list *ngIf="matches && matches.length > 0 && showlist">
+          <ion-item *ngFor="let match of matches" (click)="itemSelected(match)">
+              {{match}}
+          </ion-item>
+      </ion-list>
+  </ion-item>
+</div>
+-->
+
+<div class="autocomplete">
+    
+        <!-- ion-searchbar [(ngModel)]="queryText" [debounce]="500" placeholder="Select Drug" ></ion-searchbar> -->
+
+        <ion-item>
+          <ion-label color="primary" stacked>Enter drug name</ion-label>
+          <ion-input [(ngModel)]="queryText" placeholder="Enter or Say Drug Name"></ion-input>
+        
+          <button ion-button clear color="dark" type="button" item-right> 
+          <ion-icon name="mic" (click) = "listenDrug()"> </ion-icon> </button> 
+      </ion-item>  
+
+      <ion-item>
+        <ion-list *ngIf="matches && matches.length > 0 && showlist">
+          <ion-item *ngFor="let match of matches" (click)="itemSelected(match)">
+            {{match}}
+          </ion-item>
+        </ion-list>
+      </ion-item>
+</div>
+
+<div *ngIf="searchcount == 0">
+    <ion-item>
+      No drug(s) found in the internet with a drug name : <strong> {{queryText}} </strong> . Please check your search
+      criteria and try with a different drug name.
+    </ion-item>
+  </div>
+
+  <ion-list no-lines>
+
+      <ion-item-sliding *ngFor="let drug of vwsearchresults" >
+  
+        <button ion-item >
+                <h2><strong> {{drug.name}}</strong></h2>
+        </button>
+  
+      </ion-item-sliding>
+  
+    </ion-list>
+
+
+</ion-content>

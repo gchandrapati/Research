@@ -14,3 +14,115 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-title{
+    text-align: center;
+   
+}
+ion-icon{
+    padding-right: 5px;   
+}
+ion-card ion-card-header{
+    background-color:   lightseagreen;
+    color: white;
+}
+
+.registrationdiv{
+    margin: 5% 5% 2% 15%;
+    display: block;
+    max-width: 50em;
+    padding: 1em;
+    background-color: white;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.userinfo{
+    font-size: 18px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: floralwhite;
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.avatarstyle{
+    max-width: 100%;
+    border: 0;
+    padding: 10px;
+    position: fixed;
+    left: -2px;
+    height: 80px;
+}
+
+.menuhome{
+  background-color: darkslategray;
+}
+
+.autocomplete {
+  display     : block;
+  overflow    : hidden;
+}
+
+.autocomplete ion-list .item{
+     background-color: white;
+}
+
+ion-list .item-radio{
+    background-color: white;
+}
+
+.autocomplete ion-spinner {
+  margin-left:   500px;
+  margin-top:   -32px;
+  margin-bottom: 26px;
+  margin-right: 8px;
+}
+
+.autocomplete ion-list {
+  margin    :   8px;
+  margin-top:   -8px;
+  border    :   1px solid #dedede;
+}
+
+.autocomplete ion-item {
+}
+
+.autocomplete ion-item:hover {
+  background    : #f1f1f1;
+  cursor        : pointer;
+}
+
+.grid-header{
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid-item{
+  border: 1px solid black;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.invalid {
+        border: 2px solid #ea6153;
+}
+
+.errorText{
+  color: red;
+}
+
+.menutext{
+  font-size:18px;
+}
+
+.micon-right{
+  color:white;
+  font-weight: bold;
+}
